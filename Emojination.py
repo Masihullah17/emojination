@@ -86,11 +86,11 @@ def game(boolean,flag,time,image,label,count,fail):
         count = count + 1
         label_position = (2, 2)
         flag = True
-        cv2.putText(image, 'Can you be ' + label + '?', label_position , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
+        cv2.putText(image, 'Try being ' + label + '?', label_position , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
     elif time < 25:
-        cv2.putText(image, 'Can you be ' + label + '?', label_position , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
+        cv2.putText(image, 'Try being ' + label + '?', label_position , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
     else:
-        cv2.putText(image, 'Can you be ' + label + '?', label_position , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
+        cv2.putText(image, 'Try being ' + label + '?', label_position , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
         cv2.putText(image, 'Wrong, Try again!', label_position1 , cv2.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 3)
         if flag == True:
             fail = fail + 1
